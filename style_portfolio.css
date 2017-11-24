@@ -1,0 +1,36 @@
+
+
+body {
+    position: relative;
+    min-width: 600px;
+    color: #556270;
+    font-size: 2em;
+    font-family: 'Raleway', sans-serif;
+     background-color: lightgreen;
+   
+}
+h1 {
+    padding-bottom: 10px;
+}
+
+#about {padding-top:120px;padding-bottom:20px;color: #000}
+#skills {padding-top:80px;padding-bottom:20px;color: #000;}
+#contact {padding-top:80px;padding-bottom:20px;color: #000;}
+
+.navbar {
+    min-height: 80px;
+    border-radius: 0px;
+    margin-bottom: 0px;
+}
+.container-fluid.header-vertical-center {
+    margin-top: 15px;
+}
+.navbar-brand {
+    font-size: 2em;
+}
+
+.vertical-center {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
