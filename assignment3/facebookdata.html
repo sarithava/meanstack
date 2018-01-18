@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>FacebookProfile</title>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <!-- jQuery library --> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <script src="jquery-3.2.1.min.js"></script>
+
+        <link rel= "stylesheet" href= "facebookdata.css">
+        <script src="facebookdata.js"></script>
+        
+    </head>
+    <body>
+        <div class="page-container">
+  
+        <!-- top navbar -->
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".sidebar-nav">
+                         <span class="icon-bar"></span>
+                         <span class="icon-bar"></span>
+                         <span class="icon-bar"></span>
+                    </button>
+                     <a class="navbar-brand" href="#">FaceBook</a>
+                </div>
+            </div>
+        </div>
+
+
+         <div class="container">
+            <div class="row row-offcanvas row-offcanvas-left">
+        
+             <!-- sidebar -->
+                <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+                     <ul class="nav">
+                        <li class="active"><a href="#page1">Home_Page</a></li>
+                        <li><a href="#page2">Profile_Details</a>
+                        <li><a href="#page3">Feed_Page</a>           
+                     </ul>
+                 </div>
+    
+            <!-- main area -->
+                 <div class="col-xs-12 col-sm-9">
+                    <div class="content"> 
+                        <div id="page1"><!-- page 1 -->
+                             <p>This is a simple website which will retrieve data from facebook and  display  based on the facebook api token entered by the user </p>
+                             <p>Here you can enter the facebook access token</p>
+                             
+                                 <input type="text" id="text" name="name" value="" />
+                                 <input type="button" id="text_value" value="Get Data"/>
+                            
+                        </div>
+                 
+                         <div id="page2"><!-- page 2 -->
+                             <h1>Profile_Details</h1>
+                    
+                            <form class="facebookdetails">
+                                 <ul>
+                                    <li>
+                                        <label for="id">Id</label>
+                                        <input id="id" type="text" align="right">
+                                
+                                     </li>   
+                                     <li>
+                                        <label for="name">Name</label>
+                                        <input id="name" type="text" maxlength="100">
+                                
+                                    </li>   
+                            
+                                    <li>
+                                        <label for="birthday">Birthday</label>
+                                        <input type="text" id="birthday" maxlength="100">
+                                
+                                     </li>
+                                     <li>
+                                        <label for="hometown">HomeTown</label>
+                                        <input type="text" id="hmtown" maxlength="100">
+                                
+                                    </li>
+                                    <li>
+                                        <label for="email">Email</label>
+                                        <input type="email" id="email" maxlength="150">
+                                 
+                                    </li>
+                                     <li>
+                                        <label for="gender">Gender</label>
+                                        <input type="text" id="gender" maxlength="100">
+                                
+                                     </li>
+                                                    
+                                     <li>
+                                        <label for="location">Location</label>
+                                        <input type="text" id="location" maxlength="100">
+                                
+                                    </li>
+
+                                 </ul>
+
+                       </form>
+            
+                    </div>
+                
+                     <div id="page3"><!-- page 3 -->
+                        <h1>Feed_Details</h1>
+                    </div>
+                </div>
+
+                </div><!-- /.col-xs-12 main -->
+            </div><!--/.row-->
+        </div><!--/.container-->
+    </div><!--/.page-container-->
+       
+   </body>    
+</html>
