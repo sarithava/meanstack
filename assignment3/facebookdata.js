@@ -2,7 +2,7 @@ var response;
 function ajaxcall(token){
     var retval;
     $.ajax({
-            url:'https://graph.facebook.com/me?fields=id,name,birthday,hometown,gender,email,posts,location&access_token=' +token, 
+            url:'https://graph.facebook.com/me?fields=id,name,birthday,hometown,gender,email,posts.limit(10),location&access_token=' +token, 
             success: function(response){
                     $("#sidebar li").click(function() {
                         $("#sidebar li").removeClass("current"); // Remove any active class
